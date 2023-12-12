@@ -1,5 +1,6 @@
 let tiposDeClasses = ["Guerreiro","Mago","Monge","Ninja"]
 var classe;
+let dano = [15,16,17,18]
 
 
 
@@ -13,24 +14,24 @@ class ataquesPorClasse{
         this.ataqMonge=ataqMonge
         this.ataqNinja=ataqNinja
     }
-
+        
     ataquesTotal(){
         switch(repetidor){
             case 0:
                 classe = tiposDeClasses[0];
-                console.log(`o ${classe} atacou e ${this.ataqGuerreiro}`);
+                console.log(`o ${classe} atacou e ${this.ataqGuerreiro} e causou ${dano[0]} de dano`);
             break;
             case 1:
                 classe = tiposDeClasses[1];
-                console.log(`o ${classe} atacou e ${this.ataqMago}`);
+                console.log(`o ${classe} atacou e ${this.ataqMago} e causou ${dano[1]} de dano`);
             break;
-            case 2:
+            case 2:          
                 classe = tiposDeClasses[2];
-                console.log(`o ${classe} atacou e ${this.ataqMonge}`);
+                console.log(`o ${classe} atacou e ${this.ataqMonge} e causou ${dano[2]} de dano`);
             break;
-            case 3:
+            case 3:               
                 classe = tiposDeClasses[3];
-                console.log(`o ${classe} atacou e ${this.ataqNinja}`);
+                console.log(`o ${classe} atacou e ${this.ataqNinja} e causou ${dano[3]} de dano`);
             break;
         }
     }
